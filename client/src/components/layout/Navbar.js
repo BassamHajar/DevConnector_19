@@ -7,12 +7,12 @@ import { logout } from '../../actions/auth';
 const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
     <ul>
-      {/* <li>
+      <li>
         <Link to='/profiles'>Developers</Link>
       </li>
       <li>
         <Link to='/posts'>Posts</Link>
-      </li> */}
+      </li>
       <li>
         <Link to='/dashboard'>
           <i className='fas fa-user' /> <span className='hide-sm'>Dashboard</span>
