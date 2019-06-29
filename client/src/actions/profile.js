@@ -1,17 +1,17 @@
 import axios from 'axios';
-// eslint-disable-next-line no-unused-vars
 import { setAlert } from './alert';
+
 import {
   GET_PROFILE,
   GET_PROFILES,
   PROFILE_ERROR,
-  GET_REPOS,
   UPDATE_PROFILE,
-  ACCOUNT_DELETED,
   CLEAR_PROFILE,
+  ACCOUNT_DELETED,
+  GET_REPOS,
 } from './types';
 
-// get current user's profile
+// Get current users profile
 export const getCurrentProfile = () => async dispatch => {
   try {
     const res = await axios.get('/api/profile/me');

@@ -7,6 +7,7 @@ import { getGithubRepos } from '../../actions/profile';
 const ProfileGithub = ({ username, getGithubRepos, repos }) => {
   useEffect(() => {
     getGithubRepos(username);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [getGithubRepos]);
 
   return (
