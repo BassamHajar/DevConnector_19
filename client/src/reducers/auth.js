@@ -32,13 +32,13 @@ export default function(state = initialState, action) {
       localStorage.setItem('token', payload.token);
       return {
         ...state,
-        ...payload, // res.json(token)
+        ...payload,
         isAuthenticated: true,
         loading: false,
       };
     case REGISTER_FAIL:
-    case LOGIN_FAIL:
     case AUTH_ERROR:
+    case LOGIN_FAIL:
     case LOGOUT:
     case ACCOUNT_DELETED:
       localStorage.removeItem('token');
