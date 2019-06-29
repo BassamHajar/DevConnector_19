@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://Biso:Biso1234@devconnector-tsxdj.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "mySecretToken",
+  "githubClientId": "60545d3be51315b0abe5",
+  "githubSecret": "b02f946bc87e849d41f1b73802752f67b5db9cd6"
+}
